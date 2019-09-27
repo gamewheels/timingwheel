@@ -44,7 +44,7 @@ public:
         counter_ = 0;
     }
 
-    ~TTimerTaskList()
+    virtual ~TTimerTaskList()
     {
         Clear();
         TW_FREE(root_);
@@ -156,7 +156,7 @@ private:
     }
 
 public:
-    ~TTimingWheel()
+    virtual ~TTimingWheel()
     {
         for (int i = 0; i < wheelSize_; ++i)
         {
