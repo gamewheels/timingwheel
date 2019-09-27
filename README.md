@@ -110,8 +110,8 @@ int main(int argc, char *argv[])
 	GameTask *t1 = new GameTask("game task delay 1ms", 1);
 	GameTask *t5 = new GameTask("game task delay 5ms", 5);
 	GameTask *t10 = new GameTask("game task delay 10ms", 10);
-    GameTask *t16 = new GameTask("game task delay 16ms", 16);
-    GameTask *t160 = new GameTask("game task delay 160ms", 160);
+	GameTask *t16 = new GameTask("game task delay 16ms", 16);
+	GameTask *t160 = new GameTask("game task delay 160ms", 160);
 
 	TTimingWheel<GameTask> tw(1, 10, 0, GameTask::HandleTask);
 
@@ -129,7 +129,7 @@ int main(int argc, char *argv[])
 		tw.AdvanceClock(i);
 	}
 
-    tw.Shutdown();
+	tw.Shutdown();
 
 	delete t1;
 	delete t5;
